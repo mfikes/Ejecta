@@ -4,24 +4,14 @@ Pod::Spec.new do |s|
   s.summary  =  'A Fast, Open Source JavaScript, Canvas & Audio Implementation for iOS.'
   s.homepage =  'http://impactjs.com/ejecta'
   s.author   =  { 'Dominic Szablewski' => 'dominic.szablewski@gmail.com' }
-  s.source   =  { :git => 'https://github.com/phoboslab/Ejecta.git', :tag => 'v1.5' }
+  s.source   =  { :git => 'https://github.com/phoboslab/Ejecta.git', :commit => 'ba13a9e' }
   s.platform =  :ios
   s.requires_arc = false
 
-  s.source_files = 'Source/Ejecta/**/*.{h,m,mm}'
-  s.resources    = 'ejecta.js'
+  s.source_files = 'Source/Ejecta/**/*'
+  s.resources    = 'Source/Ejecta/Ejecta.js'
 
-  s.default_subspecs = 'Library'
   s.frameworks = 'SystemConfiguration', 'CoreText', 'QuartzCore', 'GameKit', 'CoreGraphics', 'OpenAL', 'AudioToolbox', 'OpenGLES', 'AVFoundation', 'iAd'
-  s.header_dir = 'Source/Ejecta'
-
-  s.subspec 'Library' do |os|
-    os.source_files = 'JavaScriptCore/*.h', 'lodepng/*.{c,h}'
-    os.preserve_paths = ['libJavaScriptCore.a']
-    os.library = 'JavaScriptCore', 'stdc++', 'icucore'
-    os.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/Ejecta"' }
-    os.header_mappings_dir = '.'
-  end
 
   s.license = { :type => 'MIT', :text => <<-TXT
                   Copyright (c) 2015 Dominic Szablewski
