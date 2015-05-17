@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.author   =  { 'Dominic Szablewski' => 'dominic.szablewski@gmail.com' }
   s.source   =  { :git => 'https://github.com/phoboslab/Ejecta.git', :tag => 'v1.5' }
   s.platform =  :ios
+  s.requires_arc = false
 
   s.source_files = 'Source/Ejecta/**/*.{h,m,mm}'
   s.resources    = 'ejecta.js'
