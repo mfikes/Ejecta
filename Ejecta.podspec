@@ -7,12 +7,12 @@ Pod::Spec.new do |s|
   s.source   =  { :git => 'https://github.com/phoboslab/Ejecta.git', :tag => 'v1.5' }
   s.platform =  :ios
 
-  s.source_files = 'Classes/**/*.{h,m,mm}'
+  s.source_files = 'Source/Ejecta/**/*.{h,m,mm}'
   s.resources    = 'ejecta.js'
 
   s.default_subspecs = 'Library'
   s.frameworks = 'SystemConfiguration', 'CoreText', 'QuartzCore', 'GameKit', 'CoreGraphics', 'OpenAL', 'AudioToolbox', 'OpenGLES', 'AVFoundation', 'iAd'
-  s.header_dir = 'Classes/Ejecta'
+  s.header_dir = 'Source/Ejecta'
 
   s.subspec 'Library' do |os|
     os.source_files = 'JavaScriptCore/*.h', 'lodepng/*.{c,h}'
