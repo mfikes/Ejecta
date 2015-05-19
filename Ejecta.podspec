@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.description = 'A Fast, Open Source JavaScript, Canvas & Audio Implementation for iOS.'
   s.platform = :ios
   s.requires_arc =  false
- 
-  s.source_files = 'Source/Ejecta/**/*.{h,m,mm}', 'Source/lib/NSString+*.{h,m}'
+  
+  s.source_files = 'Source/Ejecta/**/*.{h,m,mm}', 'Source/lib/SocketRocket/*.{h,m}'
   s.resources    = 'Source/Ejecta/ejecta.js', 'Source/Ejecta/EJCanvas/2D/Shaders/*'
  
   s.default_subspec = 'JavaScriptCore'
