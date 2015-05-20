@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.resources    = 'Source/Ejecta/ejecta.js', 'Source/Ejecta/EJCanvas/2D/Shaders/*'
   
   s.default_subspecs = 'JavaScriptCore', 'SocketRocket'
-  s.frameworks = 'JavaScriptCore', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'GameKit', 'CoreGraphics', 'OpenAL', 'AudioToolbox', 'OpenGLES', 'AVFoundation', 'iAd', 'CoreMotion', 'MediaPlayer', 'CoreLocation'
+  s.frameworks = 'SystemConfiguration', 'CoreText', 'QuartzCore', 'GameKit', 'CoreGraphics', 'OpenAL', 'AudioToolbox', 'OpenGLES', 'AVFoundation', 'iAd', 'CoreMotion', 'MediaPlayer', 'CoreLocation'
   
   s.header_mappings_dir =  'Source/Ejecta'
   
