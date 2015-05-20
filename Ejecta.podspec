@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
   s.subspec 'JavaScriptCore' do |os|
     os.source_files = 'Source/lib/JavaScriptCore.framework/Versions/A/Headers/*.h'
     os.preserve_paths = 'Source/lib/JavaScriptCore.framework/*'
+    os.vendored_libraries = 'Source/lib/JavaScriptCore.framework/JavaScriptCore'
     os.library = 'stdc++', 'icucore'
     os.xcconfig = { 
       'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/Ejecta/Source/lib"', 
